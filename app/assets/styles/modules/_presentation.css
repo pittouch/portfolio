@@ -1,0 +1,24 @@
+.presentation {
+    &__portrait {
+        display: block;
+        width: 200px;
+        border-radius: 50%;
+        margin: 0 auto;
+        @mixin atSmall {
+            width: 250px;
+        }
+        @mixin atMedium {
+            width: 270px;
+        }
+    }
+    &__text-content {
+        max-width: 300px;
+        text-align: center;
+        margin: 20px auto;
+        line-height: 1.4;
+        font-weight: 200;
+        @mixin atSmall {
+            max-width: 550px;
+        }
+    }
+}

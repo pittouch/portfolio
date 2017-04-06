@@ -1,0 +1,45 @@
+.skills {
+    background-color: #FFFFFF;
+    &__elements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @mixin atSmall {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__test {
+    position: relative;
+    z-index: 4;
+    background-color: blue;
+    border-radius: 50%;
+    opacity:
+
+    }
+    &__element {
+        width: 180px;
+
+
+        margin-bottom: 20px;
+        border-radius: 50%;
+        transition: opacity 1s ease-out;
+
+        &:hover {
+
+        }
+
+        @mixin atSmall {
+            width: 200px;
+            margin: 20px;
+        }
+        @mixin atMedium {
+            width: 220px;
+        }
+        @mixin atLarge {
+            width: 240px;
+        }
+    }
+}

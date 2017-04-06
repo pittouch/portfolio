@@ -1,0 +1,14 @@
+.banner {
+  position: relative;
+}
+.banner__text-content {
+  position:absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #F2F2F2;
+  font-weight: 100;
+}

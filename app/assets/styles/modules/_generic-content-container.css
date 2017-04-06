@@ -1,0 +1,10 @@
+.generic-content-container {
+    max-width: 300px;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 1.4;
+    font-weight: 200;
+    @mixin atSmall {
+        max-width: 550px;
+    }
+}

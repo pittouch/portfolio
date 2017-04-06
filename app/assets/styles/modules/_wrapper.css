@@ -1,0 +1,12 @@
+.wrapper {
+
+  padding: 0 18px;
+
+  @mixin atSmall {
+    padding: 0 42px;
+  }
+
+  @mixin atMedium {
+    padding: 0 84px;
+  }
+}

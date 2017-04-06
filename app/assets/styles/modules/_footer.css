@@ -1,0 +1,40 @@
+.footer {
+    position: relative;
+    background-image: url("/assets/images/desk-apple2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 550px;
+    &__content {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #F2F2F2;
+        font-weight: 100;
+        text-align: center;
+    }
+    &__location {
+        margin-bottom: 20px;
+    }
+    &__email {
+        margin-top: 20px;
+    }
+    &__adresse-mail {
+        text-decoration: none;
+        color: #F2F2F2;
+    }
+    &__element {
+        display: block;
+        &--upper {
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+    }
+    &__social-logo {
+        margin-top: 20px;
+        &--white {
+            color: #ffffff;
+        }
+    }
+}
