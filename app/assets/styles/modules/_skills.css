@@ -12,34 +12,26 @@
     }
 
     &__test {
-    position: relative;
-    z-index: 4;
-    background-color: blue;
+
     border-radius: 50%;
-    opacity:
+
 
     }
     &__element {
-        width: 180px;
-
-
+        width: 160px;
         margin-bottom: 20px;
         border-radius: 50%;
-        transition: opacity 1s ease-out;
 
-        &:hover {
-
-        }
 
         @mixin atSmall {
-            width: 200px;
+            width: 180px;
             margin: 20px;
         }
         @mixin atMedium {
-            width: 220px;
+            width: 200px;
         }
         @mixin atLarge {
-            width: 240px;
+            width: 220px;
         }
     }
 }
