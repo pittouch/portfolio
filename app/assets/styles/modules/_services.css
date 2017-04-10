@@ -1,7 +1,8 @@
 .services {
-    background-color: #f9f9f9;
+
+    background-color: #f2f2f2;
     text-align: center;
-    
+
     &__block {
         display: flex;
         flex-direction: column;
