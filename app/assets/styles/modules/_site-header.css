@@ -5,25 +5,40 @@
     z-index: 2;
     position: fixed;
     transition: background-color .4s ease-out;
+
     @mixin atMedium {
         position: fixed;
-        background-color: rgba(128, 128, 128, 0.3);
+        &--dark {
+          background-color: rgba(119, 119, 119, .85);
+        }
     }
     &--is-expanded {
         background-color: rgba(128, 128, 128, 0.95);
-        height: auto;
+
     }
     &__logo {
         position: absolute;
         top: 20px;
-        left: 20px;
+        left:20px;
         width: 50px;
+        transition: transform .3s ease-out;
+
+        @mixin atMedium {
+          top: 0px;
+          left: 30px;
+          width: 80px;
+          .site-header--dark & {
+            transform: scale(.70);
+            top: 0;
+          }
+        }
     }
     &__menu-content {
         position: relative;
         z-index: -10;
         opacity: 0;
-        transform: scale(1.2);
+
+        transform: translateY(-100%);
         transition: all .4s ease-out;
         padding-top: 65px;
         text-align: center;
@@ -43,7 +58,7 @@
     &__liste {
         display: inline-block;
         list-style-type: none;
-        padding: 20px 20px;
+        padding: 15px 15px;
         li {
             margin-bottom: 5px;
             border-bottom: 1px solid #FFFFFF;
@@ -66,11 +81,15 @@
         text-decoration: none;
         padding: 0 10px;
         color: #FFFFFF;
-        font-weight: 200;
+        font-weight: 300;
         font-size: 1.5rem;
 
         @mixin atMedium {
           font-size: 1rem;
+
+          &.is-current-link {
+            color: #fab669;
+          }
         }
     }
     &__menu-icon {

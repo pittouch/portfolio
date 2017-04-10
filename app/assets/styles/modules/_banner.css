@@ -1,11 +1,16 @@
 .banner {
+
+  /*  &__fond {
+      width: 100%;
+      height: auto;
+    }*/
     position: relative;
     background-image: url("/assets/images/desk-apple.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 730px; 
+    height: 780px;
     &__text-content {
         position: absolute;
         top: 40%;

@@ -13,22 +13,22 @@
 </head>
 
 <body>
-    <header class="site-header">
+    <header class="site-header page-section">
         <a href="#home"><img class="site-header__logo" src="assets/images/favicon.svg" alt="icon"></a>
         <div class="site-header__menu-icon">
             <div class="site-header__menu-icon__middle"></div>
         </div>
         <nav class="site-header__menu-content">
             <ul class="site-header__liste">
-                <li><a class="site-header__link" href="#home">Home</a></li>
-                <li><a class="site-header__link" href="#about">About me</a></li>
-                <li><a class="site-header__link" href="#services">Services</a></li>
-                <li><a class="site-header__link" href="#skills">Skills</a></li>
-                <li><a class="site-header__link" href="#contact">Contact</a></li>
+                <li><a class="site-header__link" href="#about" id="about-link">About me</a></li>
+                <li><a class="site-header__link" href="#services" id="services-link">Services</a></li>
+                <li><a class="site-header__link" href="#skills" id="skills-link">Skills</a></li>
+                <li><a class="site-header__link" href="#contact" id="contact-link">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div class="banner" id="home">
+    <div class="banner" id="home" data-matching-link="#home-link">
+    <!--  <img class="banner__fond"src="/assets/images/desk-apple.jpg" alt=""> -->
         <div class="banner__text-content banner__text-content--style">
             <div class="wrapper">
 
@@ -41,7 +41,7 @@
             </div>
         </div>
     </div>
-    <div id="about" class="presentation page-section">
+    <div id="about" class="presentation page-section" data-matching-link="#about-link">
         <div class="wrapper">
             <div class="presentation__block">
                 <img class="presentation__portrait" src="assets/images/ours.jpg" alt="my portrait">
@@ -55,7 +55,7 @@
             </div>
         </div>
     </div>
-    <div id="services" class="services page-section">
+    <div id="services" class="services page-section" data-matching-link="#services-link">
         <div class="wrapper">
             <h2 class="headlines">the services i offer</h2>
             <span class="separateur separateur--gris"></span>
@@ -82,7 +82,7 @@
     </div>
     </div>
 
-    <div id="skills" class="skills page-section">
+    <div id="skills" class="skills page-section" data-matching-link="#skills-link">
         <div class="wrapper">
             <div>
                 <h2 class="headlines">technical skills</h2>
@@ -101,8 +101,7 @@
             </div>
         </div>
     </div>
-    <footer id="contact" class="footer">
-
+    <div id="contact" class="page-section footer" data-matching-link="#contact-link">
         <div class="footer__content">
             <div class="footer__location">
                 <span class="footer__element footer__element--upper"><i class="fa fa-map-marker" aria-hidden="true"></i> location</span>
@@ -117,7 +116,7 @@
                 <a class="footer__social-logo--white" href="https://www.facebook.com/Pittouch"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
             </div>
         </div>
-    </footer>
+    </div>
     <script type="text/javascript" src="/temp/scripts/main.js" charset="utf-8"></script>
 </body>
 
