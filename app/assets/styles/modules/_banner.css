@@ -1,6 +1,6 @@
 .banner {
   position: relative;
-  background-image: url("../../assets/images/fond.png");
+  background-image: url("/../../assets/images/fond.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -8,7 +8,7 @@
 
     @mixin atMedium {
 
-      background-image: url("../../assets/images/desk-apple.jpg");
+      background-image: url("/../../assets/images/desk-apple.jpg");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
