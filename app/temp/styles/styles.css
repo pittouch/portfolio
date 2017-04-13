@@ -925,7 +925,7 @@ img {
 
 .footer {
     position: relative;
-    background-image: url("../../assets/images/fond2.png");
+    background-image: url("/../../assets/images/fond2.png");
     background-size: cover;
     background-attachment: scroll;
     height: 400px;
@@ -934,7 +934,7 @@ img {
 @media (min-width: 768px) {
 
   .footer {
-    background-image: url("../../assets/images/desk-apple2.jpg");
+    background-image: url("/../../assets/images/desk-apple2.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
