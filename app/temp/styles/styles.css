@@ -482,7 +482,7 @@ img {
 
 .banner {
   position: relative;
-  background-image: url("../assets/images/fond.png");
+  background-image: url("../../assets/images/fond.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -925,7 +925,7 @@ img {
 
 .footer {
     position: relative;
-    background-image: url("../assets/images/fond2.png");
+    background-image: url("../../assets/images/fond2.png");
     background-size: cover;
     background-attachment: scroll;
     height: 400px;
