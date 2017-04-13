@@ -3,7 +3,7 @@
     background-image: url("/assets/images/fond2.png");
     background-size: cover;
     background-attachment: scroll;
-    height: 550px;
+    height: 400px;
     @mixin atMedium {
       background-image: url("/assets/images/desk-apple2.jpg");
       background-size: cover;
@@ -18,7 +18,7 @@
         left: 50%;
         transform: translateX(-50%);
         color: #F2F2F2;
-        font-weight: 200;
+        font-weight: 300;
         text-align: center;
     }
     &__location {

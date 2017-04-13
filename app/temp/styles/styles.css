@@ -489,7 +489,7 @@ img {
   height: 580px;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 768px) {
 
   .banner {
     background-image: url("/assets/images/desk-apple.jpg");
@@ -521,6 +521,32 @@ img {
 .banner__subtitle {
   font-size: 2rem;
   font-weight: 100;
+}
+
+.fa-angle-double-down {
+  color: #FFF;
+  font-weight: 200;
+  -webkit-transition: color .3s ease-out;
+  transition: color .3s ease-out;
+}
+
+.fa-angle-double-down:hover {
+  color:#fab669;
+}
+
+.btn {
+
+  display: none;
+
+}
+
+@media (min-width: 768px) {
+
+  .btn {
+    display: inline-block;
+    position: relative;
+    top: 100px;
+  }
 }
 
 .wrapper {
@@ -689,7 +715,7 @@ img {
     -webkit-transition: background-color .4s ease-out;
     transition: background-color .4s ease-out;
     height: 75px;
-    background-color: rgba(119, 119, 119, .98);
+    background-color: rgb(119, 119, 119);
 }
 
 @media (min-width: 768px) {
@@ -700,23 +726,21 @@ img {
   }
 
   .site-header--dark {
-    background-color: rgba(119, 119, 119, .99);
+    background-color: rgb(119, 119, 119);
   }
 }
 
 .site-header--is-expanded {
-  background-color: rgba(119, 119, 119, .98);
+  background-color: rgb(119, 119, 119);
 }
 
 .site-header__logo {
   position: absolute;
-  top: 20px;
+  top: 15px;
   left:20px;
   width: 50px;
-  -webkit-transition: -webkit-transform .3s ease-out;
-  transition: -webkit-transform .3s ease-out;
-  transition: transform .3s ease-out;
-  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
 @media (min-width: 768px) {
@@ -763,7 +787,7 @@ img {
   z-index: -1;
   -webkit-transform: scale(1);
           transform: scale(1);
-  background-color: rgba(119, 119, 119, .98);
+  background-color: rgb(119, 119, 119);
 }
 
 .site-header__liste {
@@ -802,6 +826,12 @@ img {
   color: #FFFFFF;
   font-weight: 300;
   font-size: 1.5rem;
+  -webkit-transition: color .3s ease-out;
+  transition: color .3s ease-out;
+}
+
+.site-header__link:hover {
+  color: #fab669;
 }
 
 @media (min-width: 768px) {
@@ -898,7 +928,7 @@ img {
     background-image: url("/assets/images/fond2.png");
     background-size: cover;
     background-attachment: scroll;
-    height: 550px;
+    height: 400px;
 }
 
 @media (min-width: 768px) {
@@ -919,7 +949,7 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   color: #F2F2F2;
-  font-weight: 200;
+  font-weight: 300;
   text-align: center;
 }
 

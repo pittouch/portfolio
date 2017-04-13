@@ -6,7 +6,7 @@
   background-attachment: scroll;
   height: 580px;
 
-    @mixin atSmall {
+    @mixin atMedium {
 
       background-image: url("/assets/images/desk-apple.jpg");
       background-position: center center;
@@ -34,4 +34,25 @@
         font-size: 2rem;
         font-weight: 100;
     }
+}
+
+.fa-angle-double-down {
+  color: #FFF;
+  font-weight: 200;
+  transition: color .3s ease-out;
+  &:hover {
+    color:#fab669;
+  }
+}
+
+.btn {
+
+  display: none;
+
+  @mixin atMedium {
+    display: inline-block;
+  position: relative;
+  top:  100px;
+  }
+
 }

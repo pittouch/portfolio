@@ -6,7 +6,7 @@
     position: fixed;
     transition: background-color .4s ease-out;
     height: 75px;
-    background-color: rgba(119, 119, 119, .98);
+    background-color: rgb(119, 119, 119);
 
 
 
@@ -14,19 +14,20 @@
         position: fixed;
     background-color: transparent;
         &--dark {
-          background-color: rgba(119, 119, 119, .99);
+          background-color: rgb(119, 119, 119);
         }
     }
     &--is-expanded {
-        background-color: rgba(119, 119, 119, .98);
+        background-color: rgb(119, 119, 119);
 
     }
     &__logo {
         position: absolute;
-        top: 20px;
+        top: 15px;
         left:20px;
         width: 50px;
-        transition: transform .3s ease-out;
+        transition: all .3s ease-out;
+
 
         @mixin atMedium {
           top: 0px;
@@ -57,7 +58,7 @@
             opacity: 1;
             z-index: -1;
             transform: scale(1);
-            background-color: rgba(119, 119, 119, .98);
+            background-color: rgb(119, 119, 119);
         }
     }
     &__liste {
@@ -88,6 +89,11 @@
         color: #FFFFFF;
         font-weight: 300;
         font-size: 1.5rem;
+        transition: color .3s ease-out;
+
+        &:hover {
+          color: #fab669;
+        }
 
         @mixin atMedium {
           font-size: 1rem;
